@@ -1,4 +1,4 @@
-{pkgs, ...}: 
+{pkgs, inputs, ...}: 
 let
   isDarwin = system == "aarch64-darwin" || system == "x86_64-darwin";
   system = pkgs.system;
@@ -213,9 +213,9 @@ in
   };
 
   # programs.neovim = inputs.thealtf4stream-nvim.lib.mkHomeManager {inherit system;};
-  #  programs.neovim = inputs.thealtf4stream-nvim.lib.mkHomeManager {
-  #    system = pkgs.system;
-  #  };
+  programs.neovim = inputs.thealtf4stream-nvim.lib.mkHomeManager {
+    system = pkgs.system;
+  };
   
   programs.nnn = {
     enable = true;
