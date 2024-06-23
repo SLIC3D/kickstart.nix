@@ -290,7 +290,11 @@ in
       else "xterm-256color";
   };
 
-  programs.vscode.enable = true;
+  # Unfree software requires 
+  # { nixpkgs.config.allowUnfree = true; }
+  # or
+  # { nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [ "vscode" ]; }
+  # programs.vscode.enable = true;
 
   programs.zsh = {
     enable = true;
