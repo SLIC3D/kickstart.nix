@@ -5,6 +5,7 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = "github:nix-community/home-manager/release-24.05";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
+    thealtf4stream-nvim.url = "github:ALT-F4-LLC/thealtf4stream.nvim";
   };
 
   outputs = inputs @ {
