@@ -56,13 +56,13 @@
 
   services.xserver.enable = true;
   services.displayManager.autoLogin.enable = true;
-  services.xserver.layout = "us";
+  services.xserver.layout = "de";
   services.xserver.xkbVariant = "";
 
   # Enable CUPS to print documents.
   #services.printing.enable = true;
 
-  time.timeZone = "America/Los_Angeles";
+  time.timeZone = "Europe/Berlin";
 
   ## Sound settings ##
   sound.enable = true;
