@@ -213,9 +213,9 @@ in
   };
 
   # programs.neovim = inputs.thealtf4stream-nvim.lib.mkHomeManager {inherit system;};
-  programs.neovim = inputs.thealtf4stream-nvim.lib.mkHomeManager {
-    system = pkgs.system;
-  };
+  # programs.neovim = inputs.thealtf4stream-nvim.lib.mkHomeManager {
+  #   system = pkgs.system;
+  # };
   
   programs.nnn = {
     enable = true;

@@ -22,6 +22,7 @@ in
       {
         environment.systemPackages = with pkgs; [
           neovim
+          inputs.thealtf4stream-nvim.packages.${pkgs.system}.neovim
         ];
 
         services.xserver.displayManager.autoLogin.user = username;
