@@ -7,7 +7,7 @@ on:
       - main
 
 env:
-  CACHIX_BINARY_CACHE: altf4llc-os
+  CACHIX_BINARY_CACHE: slic3d-nixos
 
 jobs:
   darwin:

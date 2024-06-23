@@ -2,10 +2,10 @@
 
 Kickstart your Nix environments.
 
-[![Test flake](https://github.com/ALT-F4-LLC/kickstart.nix/actions/workflows/flake.yml/badge.svg)](https://github.com/ALT-F4-LLC/kickstart.nix/actions/workflows/flake.yml)
-[![Test home-manager](https://github.com/ALT-F4-LLC/kickstart.nix/actions/workflows/flake-home-manager.yml/badge.svg)](https://github.com/ALT-F4-LLC/kickstart.nix/actions/workflows/flake-home-manager.yml)
-[![Test languages](https://github.com/ALT-F4-LLC/kickstart.nix/actions/workflows/flake-language.yml/badge.svg)](https://github.com/ALT-F4-LLC/kickstart.nix/actions/workflows/flake-language.yml)
-[![Test systems](https://github.com/ALT-F4-LLC/kickstart.nix/actions/workflows/flake-system.yml/badge.svg)](https://github.com/ALT-F4-LLC/kickstart.nix/actions/workflows/flake-system.yml)
+[![Test flake](https://github.com/SLIC3D/kickstart.nix/actions/workflows/flake.yml/badge.svg)](https://github.com/SLIC3D/kickstart.nix/actions/workflows/flake.yml)
+[![Test home-manager](https://github.com/SLIC3D/kickstart.nix/actions/workflows/flake-home-manager.yml/badge.svg)](https://github.com/SLIC3D/kickstart.nix/actions/workflows/flake-home-manager.yml)
+[![Test languages](https://github.com/SLIC3D/kickstart.nix/actions/workflows/flake-language.yml/badge.svg)](https://github.com/SLIC3D/kickstart.nix/actions/workflows/flake-language.yml)
+[![Test systems](https://github.com/SLIC3D/kickstart.nix/actions/workflows/flake-system.yml/badge.svg)](https://github.com/SLIC3D/kickstart.nix/actions/workflows/flake-system.yml)
 
 ![kickstart.nix](preview/kickstart.nix.webp)
 
@@ -73,7 +73,7 @@ cd ~/kickstart.nix
 4. Using `nix flake init` generate the `kickstart.nix` template locally:
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#home-manager
+nix flake init -t github:SLIC3D/kickstart.nix#home-manager
 ```
 
 5. Update following value(s) in `flake.nix` configuration:
@@ -163,7 +163,7 @@ cd ~/kickstart.nix
 7. Using `nix flake init` generate the `kickstart.nix` template locally:
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#darwin
+nix flake init -t github:SLIC3D/kickstart.nix#darwin
 ```
 
 8. Update the following value(s) in `flake.nix` configuration:
@@ -222,8 +222,8 @@ cd ~/kickstart.nix
 7. Using `nix flake init` generate the `kickstart.nix` template of your choice locally:
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#nixos-desktop
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#nixos-minimal
+nix flake init -t github:SLIC3D/kickstart.nix#nixos-desktop
+nix flake init -t github:SLIC3D/kickstart.nix#nixos-minimal
 ```
 
 6. Update the following value(s) in `flake.nix` configuration:
@@ -259,7 +259,7 @@ in
 7. Switch to `kickstart.nix` environment for your system with flake configuration:
 
 > [!IMPORTANT]
-> We use `--impure` due to how `/etc/nixos/hardware-configuration.nix` is generated and stored on the system after installation. To avoid using this flag, copy `hardware-configuration.nix` file locally and replace import in the template [see example](https://github.com/ALT-F4-LLC/dotfiles-nixos/blob/main/lib/default.nix#L54).
+> We use `--impure` due to how `/etc/nixos/hardware-configuration.nix` is generated and stored on the system after installation. To avoid using this flag, copy `hardware-configuration.nix` file locally and replace import in the template [see example](https://github.com/SLIC3D/dotfiles-nixos/blob/main/lib/default.nix#L54).
 
 - For `aarch64` platforms:
 
@@ -291,7 +291,7 @@ Be sure to explore the files below to get started customizing:
 Used for Bash scripts.
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#bash
+nix flake init -t github:SLIC3D/kickstart.nix#bash
 ```
 
 #### <a name="cpp-cmake"></a> C++ (cmake)
@@ -299,7 +299,7 @@ nix flake init -t github:ALT-F4-LLC/kickstart.nix#bash
 Used for C++ projects using CMake as a build system.
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#cpp-cmake
+nix flake init -t github:SLIC3D/kickstart.nix#cpp-cmake
 ```
 
 #### Dart
@@ -307,7 +307,7 @@ nix flake init -t github:ALT-F4-LLC/kickstart.nix#cpp-cmake
 Used for Dart applications.
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#dart
+nix flake init -t github:SLIC3D/kickstart.nix#dart
 ```
 
 #### Go (module)
@@ -318,7 +318,7 @@ Used for modern Go apps setup with `go.mod` system. To build legacy Go apps, use
 > Be sure to update `go.mod` with proper repository after running `init` command.
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#go-mod
+nix flake init -t github:SLIC3D/kickstart.nix#go-mod
 ```
 
 #### Go (package)
@@ -329,7 +329,7 @@ Used for legacy Go apps **not** setup with `go.mod` system. To build modern Go a
 > Be sure to update `deps.nix` with vendor dependencies after running `init` command [(read more)](https://nixos.wiki/wiki/Go#buildGoPackage).
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#go-pkg
+nix flake init -t github:SLIC3D/kickstart.nix#go-pkg
 ```
 
 #### Haskell
@@ -337,7 +337,7 @@ nix flake init -t github:ALT-F4-LLC/kickstart.nix#go-pkg
 Used for Haskell applications.
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#haskell
+nix flake init -t github:SLIC3D/kickstart.nix#haskell
 ```
 
 #### Lua (application)
@@ -348,7 +348,7 @@ Used for Lua script applications. This template creates a shell script wrapper w
 > We wrap Lua because we are using an interpreted language which requires both binary and code to run. This is similar to `console scripts` in the `python-app` template.
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#lua-app
+nix flake init -t github:SLIC3D/kickstart.nix#lua-app
 ```
 
 #### NestJS
@@ -356,7 +356,7 @@ nix flake init -t github:ALT-F4-LLC/kickstart.nix#lua-app
 Used for NestJS applications. The template builds using `npm`.
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#nestjs
+nix flake init -t github:SLIC3D/kickstart.nix#nestjs
 ```
 
 To update your dependencies, install/upgrade them as normal via NPM, then use
@@ -375,7 +375,7 @@ Used for Node.js backend applications. The template builds using `npm`, and does
 not assume you use TypeScript.
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#nodejs-backend
+nix flake init -t github:SLIC3D/kickstart.nix#nodejs-backend
 ```
 
 To update your dependencies, install/upgrade them as normal via NPM, then use
@@ -398,7 +398,7 @@ sha256-nTTzkQEdnwWEQ/3uy8hUbPsRvzM53xuoJHoQhR3E/zk=
 Used for OCaml applications.
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#ocaml
+nix flake init -t github:SLIC3D/kickstart.nix#ocaml
 ```
 
 #### PHP
@@ -406,7 +406,7 @@ nix flake init -t github:ALT-F4-LLC/kickstart.nix#ocaml
 Used for PHP applications
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#php
+nix flake init -t github:SLIC3D/kickstart.nix#php
 ```
 
 #### Powershell
@@ -414,7 +414,7 @@ nix flake init -t github:ALT-F4-LLC/kickstart.nix#php
 Used for Powershell applications.
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#powershell
+nix flake init -t github:SLIC3D/kickstart.nix#powershell
 ```
 
 #### Python (application)
@@ -422,7 +422,7 @@ nix flake init -t github:ALT-F4-LLC/kickstart.nix#powershell
 Used for runnable Python apps setup with `setup.py` and includes wrapped console scripts that can be executed from CLI. To build re-useable Python packages, use `python-pkg` template. 
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#python-app
+nix flake init -t github:SLIC3D/kickstart.nix#python-app
 ```
 
 #### Python (package)
@@ -430,7 +430,7 @@ nix flake init -t github:ALT-F4-LLC/kickstart.nix#python-app
 Used for Python packages setup with `setup.py` that can be re-used within other Nix-built applications or packages. To build runnable Python apps, use `python-app` template. 
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#python-pkg
+nix flake init -t github:SLIC3D/kickstart.nix#python-pkg
 ```
 
 #### Rust
@@ -438,7 +438,7 @@ nix flake init -t github:ALT-F4-LLC/kickstart.nix#python-pkg
 Used for Rust applications.
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#rust
+nix flake init -t github:SLIC3D/kickstart.nix#rust
 ```
 
 #### Swift
@@ -446,7 +446,7 @@ nix flake init -t github:ALT-F4-LLC/kickstart.nix#rust
 Used for Swift applications packages with SwiftPM.
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#swiftpm
+nix flake init -t github:SLIC3D/kickstart.nix#swiftpm
 ```
 
 To update your dependencies, while in the direnv dev shell, run:
@@ -466,7 +466,7 @@ Then build again.
 Used for React-based frontends built with Vite. The template builds using `npm`.
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#vite-react
+nix flake init -t github:SLIC3D/kickstart.nix#vite-react
 ```
 
 To update your dependencies, install/upgrade them as normal via NPM, then use
@@ -485,7 +485,7 @@ sha256-nTTzkQEdnwWEQ/3uy8hUbPsRvzM53xuoJHoQhR3E/zk=
 Used for Zig applications.
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#zig
+nix flake init -t github:SLIC3D/kickstart.nix#zig
 ```
 
 ### Systems
@@ -498,7 +498,7 @@ Home Manager template allows you to run Nix with Home Manager on non-NixOS based
 > This setup is ideal for developers interested in running Linux distros other than NixOS.
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#nixos-minimal
+nix flake init -t github:SLIC3D/kickstart.nix#nixos-minimal
 ```
 #### macOS
 
@@ -508,7 +508,7 @@ macOS template allows you to run Nix tools on native Apple hardware.
 > This setup is ideal for developers already using macOS.
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#darwin
+nix flake init -t github:SLIC3D/kickstart.nix#darwin
 ```
 
 #### NixOS (desktop)
@@ -519,7 +519,7 @@ NixOS desktop template includes base operating system with GNOME (default) windo
 > This setup is ideal for getting started moving to NixOS as your main desktop.
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#nixos-desktop
+nix flake init -t github:SLIC3D/kickstart.nix#nixos-desktop
 ```
 
 #### NixOS (headless)
@@ -530,5 +530,5 @@ NixOS headless (minimal) template includes base operating system without any win
 > This setup is ideal for servers and other headless tasks.
 
 ```bash
-nix flake init -t github:ALT-F4-LLC/kickstart.nix#nixos-minimal
+nix flake init -t github:SLIC3D/kickstart.nix#nixos-minimal
 ```

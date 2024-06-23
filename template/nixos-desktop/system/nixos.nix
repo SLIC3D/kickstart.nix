@@ -32,7 +32,7 @@ in
 
         # Use plasma5 desktop environment
         services.xserver.desktopManager.plasma5.enable = enabledDesktopPlasma5;
-        services.xserver.displayManager.sddm.enable = enabledDesktopPlasma5;
+        services.displayManager.sddm.enable = enabledDesktopPlasma5;
 
         users.users."${username}" = {
           extraGroups = ["networkmanager" "wheel"];
